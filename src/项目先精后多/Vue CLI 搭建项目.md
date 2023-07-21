@@ -2,7 +2,7 @@
 ## 使用Vue CLI 3(脚手架)搭建项目
 
 1. Vue CLI是Vue官方提供的用于搭建基于Vue+Webpack+ES6项目的脚手架工具
-2. 在线文档: https://cli.vuejs.org/zh/
+2. 在线文档: <https://cli.vuejs.org/zh/>
 3. 操作:
 ``` shell
 # 使用vue-cli3
