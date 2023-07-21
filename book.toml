@@ -1,0 +1,6 @@
+[book]
+authors = ["ankim"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Ankim's happy study journal"
