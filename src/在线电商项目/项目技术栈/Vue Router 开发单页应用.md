@@ -4,8 +4,8 @@
 
 ```
 npm install vue-router
-   注意 vue 2 -- vue-router@3
-        vue 3 ---vue-router@4
+        注意 vue 2 -- vue-router@3
+            vue 3 ---vue-router@4
 ```
 
 ## 编码
@@ -54,3 +54,4 @@ new Vue({
   router, // 注册路由器
 }).$mount('#app')
 ```
+

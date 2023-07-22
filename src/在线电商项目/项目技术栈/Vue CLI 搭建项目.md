@@ -19,13 +19,12 @@ vue init webpack gshop-client2
 cd shop-client
 npm run serve
 ```
-## 1.3. 编码测试与打包发布项目
+##  编码测试与打包发布项目
 
 1. 编码测试
 
 ```shell
 npm run serve  
-访问: http://localhost:8080
 编码, 自动编译打包(HMR), 查看效果
 ```
 
@@ -35,4 +34,36 @@ npm run serve
 npm run build
 npm install -g serve
 serve dist -p 5000
-访问: [http://localhost:5000](http://localhost:5000)
+访问: http://localhost:5000
+```
+
+## 其他配置
+
+创建脚手架项目指令：vue create 项目名字【都是英文的】
+
+node_modules:项目依赖的地方
+public:放置静态资源地方【静态页面】,public文件夹里面静态资源，原封不动打包到dist里面。
+src:程序员源代码区域
+        assets文件夹:也是放置静态资源的地方,webpack打包的时候，这里面的静态资源会当作webpack模块，打包js文件里面。最后看不见了。
+        vue.config.js:配置代理跨域。
+```js
+        const { defineConfig } = require('@vue/cli-service')
+        module.exports = defineConfig({
+        transpileDependencies: true,
+        //让浏览器自动打开
+         devServer:{
+        //设置本地服务器打开的域名
+        host:'127.0.0.1',
+        //设置本地服务器打开端口号
+        port:8080,
+        }
+        })
+```        
+package.json文件  
+```json
+ "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+}
+```
